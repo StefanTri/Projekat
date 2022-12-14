@@ -1,0 +1,262 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: grey;
+}
+.top-panel{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-panel .cr{
+    color: orangered;
+}
+.top-panel a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.top-panel li{
+    list-style: none;
+    display: inline;
+}
+.nav{
+    width: 100%;
+    background-color: white;
+}
+.nav img{
+    width: 400px;
+}
+.nav-item{
+    display: inline;
+    padding: 15px 30px;
+    margin: 0px 20px;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.jed{
+    margin: 0px 60px;
+}
+
+.top-panel a:hover{
+    color: orangered;
+}
+.slika{
+    margin: 0% 25%;
+}
+.slika img{
+    margin: 20px 10%;
+    padding: 5px;
+    width: 500px;
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slika img:hover{
+    transition: 0.9s ease;
+    transform: rotate(360deg);
+}
+.container{
+    padding: 10px;
+    margin: 20px;
+}
+.nas{
+    width: 100%;
+    background-color: white;
+    color: orangered;
+    text-align: center;
+    font-weight: bold;
+}
+.dug{
+    padding: 5px;
+    border: 1px solid orangered;
+    background-color: orangered;
+    text-align: center;
+    align-items: center;
+}
+.dug p{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+.dug a{
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid grey;
+    border-radius: 10%;
+    background-color: grey;
+}
+.dug a:hover{
+    padding: 10px;
+    background-color: white;
+    color: orangered;
+    border: 2px solid white;
+    border-radius: 10%;
+}
+.ft{
+    width: 100%;
+    background-color: white;
+    color: orangered;
+    text-align: center;
+}
+.logi{
+    margin: 10px;
+    width: 50px;
+}
+.tek{
+    background-color: white;
+    margin: 5px 20%;
+    border: 2px solid white;
+    border-radius: 10%;
+}
+.tek:hover{
+    border-radius: 0%;
+    transition: 0.9s ease;
+    transform: rotate(360deg);
+}
+.nass{
+    text-align: center;
+    color: orangered;
+}
+.tek p{
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    font-family: Comic Sans MS;
+    font-size: 20px;
+}
+.trener{
+    background-color: white;
+    margin: 10px 10%;
+    border: 2px solid white;
+}
+.dugg{
+    text-align: center;
+}
+.dugg a{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.699);
+    border: 2px solid grey;
+    border-radius: 10%;
+    background-color: orangered;
+}
+.dugg a:hover{
+    color: white;
+}
+form{
+    background-color: orangered;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 30%;
+    color: white;
+}
+input{
+    
+    margin: 10px;
+}
+.animacija img{
+    position: absolute;
+    bottom: 110px;
+    width: 150px;
+    animation-name: logo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    
+}
+@keyframes logo {
+    
+    0%{
+        left: 0px;
+        transform: rotate(-720deg);
+    }
+
+    100%{
+        left: 1200px;
+
+    }
+
+}
+footer{
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+}
+@media screen and (min-width: 250px) and (max-width: 500px) {
+    .top-panel{
+        width: 100%;
+    }
+    .nav{
+        height: 80px;
+        width: 100%;
+    }
+    .jed{
+        margin: 1px;
+    }
+    
+    .nav img{
+        display: none;
+    }
+
+    .nav ul{
+        padding: 0px;
+    }
+
+    .nav .nav-item{
+        padding: 5px 10px;
+        margin: 5px;
+    }
+    .slika img{
+        width: 200px;
+        margin: 5px;
+    }
+    .dug{
+        padding: 0%;
+        width: 100%;
+    }
+    .ft{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 992px){
+    .top-panel{
+        width: 100%;
+    }
+    .nav{
+        width: 100%;
+    }
+    .jed{
+        margin: 5px;
+    }
+    .nav img{
+        width: 300px;
+    }
+    .slika{
+        margin: 10%;
+    }
+    .slika img{
+        margin: 10%;
+    }
+    .dug{
+        position: absolute;
+        bottom: 80px;
+        width: 100%;
+    }
+    .ft{
+        position: absolute;
+        width: 100%;
+        bottom: 0%;
+    }
+}
